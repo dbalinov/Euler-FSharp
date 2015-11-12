@@ -49,6 +49,7 @@
     <Compile Include="Task3.fs" />
     <Compile Include="Task4.fs" />
     <Compile Include="Task5.fs" />
+    <Compile Include="Task6.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
