@@ -11,14 +11,9 @@
  * exceed four million, find the sum of the even-valued terms.
  *)
 
-let fibonacciSequence =
-    Seq.unfold
-        (fun (current, next) -> Some(current, (next, current + next)))
-        (1, 2)
-
 let run = 
-    fibonacciSequence
-    |> Seq.takeWhile (fun x -> x < 4000000) 
-    |> Seq.filter (fun x -> x % 2 = 0)
+    Sequence.fibonacciNumbers
+    |> Seq.takeWhile (fun x -> x < 4000000I) 
+    |> Seq.filter (fun x -> x % 2I = 0I)
     |> Seq.sum 
     |> printfn "%A"

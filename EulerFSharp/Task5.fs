@@ -11,15 +11,8 @@
  *)
 
 let run = 
-    let intGenerator =
-        Seq.unfold
-            (fun x -> Some(x, x + 1)) 
-            (1)
-    let commonDivider = 5 * 7 *11 * 13 * 17 * 19* 9 * 16
+    let commonDivider = 5 * 7 *11 * 13 * 17 * 19* 9 * 16 |> bigint
 
-    let evenlyDevisibleBy20 n =     
-       n % commonDivider = 0
-    
-    intGenerator
-    |> Seq.find evenlyDevisibleBy20
+    Sequence.naturalNumbers
+    |> Seq.find (fun n -> n % commonDivider = 0I)
     |> printfn "%O"

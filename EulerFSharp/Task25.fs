@@ -27,11 +27,6 @@
  *)
 
 let run = 
-    let fibonacciSequence =
-        Seq.unfold
-            (fun (current, next) -> Some(current, (next, current + next)))
-            (0I, 1I)
-
-    fibonacciSequence
+    Sequence.fibonacciNumbers
     |> Seq.findIndex (fun x -> x.ToString().Length = 1000)
     |> printfn "%d"
