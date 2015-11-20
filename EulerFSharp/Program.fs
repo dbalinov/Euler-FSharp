@@ -6,7 +6,8 @@ open System.Diagnostics
 let main argv = 
     let watch = Stopwatch()
     watch.Start()
-    Task5.run
+    Task48.run
+
     watch.Stop();
     printfn "%O" watch.Elapsed
     0
