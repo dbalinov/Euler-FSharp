@@ -54,6 +54,7 @@
     <Compile Include="Task7.fs" />
     <Compile Include="Task20.fs" />
     <Compile Include="Task25.fs" />
+    <Compile Include="Task45.fs" />
     <Compile Include="Task48.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
